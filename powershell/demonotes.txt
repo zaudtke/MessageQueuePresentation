@@ -1,0 +1,40 @@
+
+StartServer
+
+
+RunDirectNoRouteDemo
+	Simple any text
+	very similar to MSMQ out of the box
+	
+RunDirectMultiHandlerDemo
+	Round Robin based on workers
+	Scalable - Can spin up lots of workers to process
+	All operating on 1 Queue
+	
+RunRoutingDemo
+	Multiple Queues
+	Worker or more per Queue
+	Exhange based on similar messges with different processes instead of 1 for all
+	
+RunFanoutDemo
+	1 exchange
+	Multiple Queues
+	Same Message
+	Can spin up more workers
+	Add new queues when needed
+	
+RunTopicDemo
+	1 exchange
+	multiple queues
+	Routing Keys
+	* replaces 1 word
+	# replaces 0 or more
+	Sales anywhere
+	Discount only at beginning
+	remember semicolin
+	
+RunHeaderDemo
+	1 exchange
+	multiple queues
+	routing but with Headers
+	
